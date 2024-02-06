@@ -2,12 +2,19 @@ body{
     background-color: #432596;
 }
 /* My */
-.button-area{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 10vh;
-    gap: 10px;
+
+
+.play-button{
+  width: fit-content;
+  height: fit-content;
+  font-size: 40px;
+  color: black;
+  font-weight: bolder;
+  
+}
+.play-area{
+  display: flex;
+  justify-content: center;
 }
 /* .button-area > button{
     height: 50px;

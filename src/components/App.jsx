@@ -15,8 +15,8 @@ function App(){
 
     return <div>
 
-        <div className="button-area">
-        <button className="button-71" style={{visibility : isHidden ? "hidden" : null}}  onClick={handleClick} value="Batting" >Play</button>
+        <div className="play-area">
+        <button className="play-button"   onClick={handleClick} value="Batting" >{isHidden?"Hand Cricket":"Play"}</button>
         
         
         </div>

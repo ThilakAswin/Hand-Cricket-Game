@@ -84,6 +84,13 @@ function Ground(props){
 
     return <div>
       <div class="container">
+   
+    <div className="ground-area">
+        <h2 id="result">{result}</h2>
+         <h2 id="action" style={{visibility:props.isHidden?null:"hidden"}}>You are {batting?"Batting":"Bowling"}</h2>
+         <h2 id="score">Score : {total}</h2>
+         <h2 id="target">Target: {target}</h2>
+    </div>
     <div class="row">
       <div class="col col-heading">
         <h1>User</h1>
@@ -96,12 +103,6 @@ function Ground(props){
         <h1>Cpu</h1>
       </div>
       <div class="col col-display" id="scoreGuest">{cpuScore}</div>
-    </div>
-    <div className="ground-area">
-        <h2 id="result">{result}</h2>
-         <h2 id="action" style={{visibility:props.isHidden?null:"hidden"}}>You are {batting?"Batting":"Bowling"}</h2>
-         <h2 id="score">Score : {total}</h2>
-         <h2 id="target">Target: {target}</h2>
     </div>
     <div className="controller">
         <button className="button-71" onClick={handleClick} value="1">1</button>
