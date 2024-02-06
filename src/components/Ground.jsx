@@ -21,7 +21,7 @@ function Ground(props){
         setCpuScore(cpuChoice);
         if(choice === cpuChoice)
         {
-            alert("out");
+            alert("OUT");
             // setOut(true);
             setTarget(total);
             setTotal(0);
@@ -47,22 +47,30 @@ function Ground(props){
         {
             if(total > target){
                 setOut(false);
+                
                 setResult("You Lost");
+                alert("You Lost");
                 setTimeout(()=>window.location.reload(),5000);
             }
             else if(total===target){
+                
                 setResult("Draw");
+                alert("Draw");
                 setTimeout(()=>window.location.reload(),5000);
             }
             else{
+                
                 setResult("You Won");
+                alert("You Won")
                 setTimeout(()=>window.location.reload(),5000);
             }
            
         }
         setTotal(prevScore =>{
             if(total +cpuChoice > target)
-            {setResult("You Lost");
+            { 
+                setResult("You Lost");
+                alert("You Lost")
             setTimeout(()=>window.location.reload(),5000);}
             return prevScore + cpuChoice;
         });
@@ -90,10 +98,10 @@ function Ground(props){
       <div class="col col-display" id="scoreGuest">{cpuScore}</div>
     </div>
     <div className="ground-area">
-        <h2>{result}</h2>
-         <h2 style={{visibility:props.isHidden?null:"hidden"}}>You are {batting?"Batting":"Bowling"}</h2>
-         <h2>Score : {total}</h2>
-         <h2>Target: {target}</h2>
+        <h2 id="result">{result}</h2>
+         <h2 id="action" style={{visibility:props.isHidden?null:"hidden"}}>You are {batting?"Batting":"Bowling"}</h2>
+         <h2 id="score">Score : {total}</h2>
+         <h2 id="target">Target: {target}</h2>
     </div>
     <div className="controller">
         <button className="button-71" onClick={handleClick} value="1">1</button>
