@@ -1,0 +1,208 @@
+body{
+    background-color: #432596;
+}
+/* My */
+.button-area{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 10vh;
+    gap: 20px;
+}
+/* .button-area > button{
+    height: 50px;
+    width: 50px;
+} */
+.ground-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     
+}
+
+/* .display{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.display > h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: gold;
+} */
+h2{
+  font-weight: 600;
+  color: #fdfdfe;
+  text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+    0px 0px 20px #b393d3;
+}
+
+
+.controller{
+    /* position: absolute;
+    top: 70%;
+    left: 50%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;   
+}
+
+.controller > button{
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Buttons */
+
+
+/* CSS */
+.button-71 {
+  background-color: #0078d0;
+  border: 0;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-71:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+.button-71:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .button-71 {
+    padding: 16px 48px;
+  }
+}
+
+
+/* Display */
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+/* @font-face {
+  font-family: myFirstFont;
+  src: url(Cursed.ttf);
+} */
+/* latin-ext */
+@font-face {
+    font-family: 'Silkscreen';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/silkscreen/v4/m8JXjfVPf62XiF7kO-i9YL1la1OD.woff2) format('woff2');
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Silkscreen';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/silkscreen/v4/m8JXjfVPf62XiF7kO-i9YLNlaw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #10002b;
+}
+.container {
+  max-width: fit-content;
+  max-height: fit-content;
+  background: #4c1d95;
+  border-radius: 12px;
+  border: 3px solid white;
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  padding: 68px 82px;
+  gap: 100px;
+  box-shadow: 0px 0px 3px black;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.col-heading h1 {
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  /* font-size: 20px; */
+  /* line-height: 36px; */
+  text-align: center;
+
+  color: white;
+}
+.col-display {
+  width: 80px;
+  height: 60px;
+  background: #080001;
+  border-radius: 5px;
+  font-family: "Silkscreen", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  /* line-height: 110px; */
+  text-align: center;
+  color: #f94f6d;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-y: scroll;
+    padding:20px 0px;
+    height:auto;
+  }
+  .container {
+    margin: auto auto;
+    padding-block: 30px;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 100%;
+  }
+}
