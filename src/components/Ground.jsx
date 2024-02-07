@@ -50,19 +50,19 @@ function Ground(props){
                 
                 setResult("You Lost");
                 alert("You Lost");
-                setTimeout(()=>window.location.reload(),5000);
+                setTimeout(()=>window.location.reload(),3000);
             }
             else if(total===target){
                 
                 setResult("Draw");
                 alert("Draw");
-                setTimeout(()=>window.location.reload(),5000);
+                setTimeout(()=>window.location.reload(),3000);
             }
             else{
                 
                 setResult("You Won");
                 alert("You Won")
-                setTimeout(()=>window.location.reload(),5000);
+                setTimeout(()=>window.location.reload(),3000);
             }
            
         }
@@ -72,7 +72,7 @@ function Ground(props){
             { 
                 setResult("You Lost");
                 alert("You Lost")
-            setTimeout(()=>window.location.reload(),5000);}
+            setTimeout(()=>window.location.reload(),3000);}
             return prevScore + cpuChoice;
         });}
             
