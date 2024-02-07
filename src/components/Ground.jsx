@@ -8,8 +8,8 @@ function Ground(props){
     const[cpuScore,setCpuScore] = useState(0);
     const[total,setTotal] = useState(0);
     const[target,setTarget] = useState(0);
-    const[batting,setBatting] = useState(props.value==="Batting"?true:false);
-    const[isOut,setOut] = useState(false);
+    const[batting,setBatting] = useState(true);
+
     const[result,setResult] = useState("");
 
 
@@ -23,7 +23,7 @@ function Ground(props){
         {
             alert("OUT");
             // setOut(true);
-            setTarget(total);
+            setTarget(total+1);
             setTotal(0);
             setBatting(false);
         }else{
@@ -46,7 +46,7 @@ function Ground(props){
         if(choice === cpuChoice)
         {
             if(total > target){
-                setOut(false);
+                
                 
                 setResult("You Lost");
                 alert("You Lost");
@@ -66,6 +66,7 @@ function Ground(props){
             }
            
         }
+        else{
         setTotal(prevScore =>{
             if(total +cpuChoice > target)
             { 
@@ -73,7 +74,7 @@ function Ground(props){
                 alert("You Lost")
             setTimeout(()=>window.location.reload(),5000);}
             return prevScore + cpuChoice;
-        });
+        });}
             
             
        
@@ -87,7 +88,7 @@ function Ground(props){
    
     <div className="ground-area">
         <h2 id="result">{result}</h2>
-         <h2 id="action" style={{visibility:props.isHidden?null:"hidden"}}>You are {batting?"Batting":"Bowling"}</h2>
+         <h2 id="action" >You are {batting?"Batting":"Bowling"}</h2>
          <h2 id="score">Score : {total}</h2>
          <h2 id="target">Target: {target}</h2>
     </div>
